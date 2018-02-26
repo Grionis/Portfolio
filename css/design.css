@@ -1,0 +1,309 @@
+html{
+    box-sizing: border-box; 
+}
+*,*::after{
+    box-sizing: inherit;
+}
+/** Header */
+div.container-social{
+    padding-top: 10px;
+    
+
+}
+
+nav.social-networking{
+    text-align: center;
+    position: relative;
+    display: block;
+   
+}
+
+nav.social-networking a {
+    font-size:  2em;
+    color: #f24918;
+    margin-right: 20px;
+    position: relative;
+   
+    
+}
+
+
+
+div.background::before{
+    background-image: url("../img/back1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    content: '';
+   
+}
+
+.parallax::before{
+    width: 100%;
+    height: 66%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+header div  p{
+    font-family: 'Roboto', sans-serif;
+    color: azure;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow:
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;   
+    text-transform: uppercase;
+    padding-top:50px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+#firstp{
+   
+    margin-right: 60%;
+}
+#secondp{
+    margin-right:10%;
+}
+#thirdp{
+    margin-left: 50%;
+}
+
+
+/** style bar menu **/
+
+
+div.bar{
+    background-color: #353535;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    position: relative;
+    
+}
+
+
+div.menu nav a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin-right: 10px;
+    line-height: 40px;
+    padding: 10px 10px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: all .3s ease;
+    
+
+}
+
+div.menu nav a:hover{
+    background-color: #f24918;
+   
+}
+
+div.menu nav :last-child{
+border: 2px  solid #fe4918;
+color: #fe4918;
+}
+div.menu nav :last-child:hover{
+color: aliceblue;
+}
+
+
+/** main  **/
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+sidebar{
+    float: left;
+    margin-left: 15%;
+    padding-top: 120px;
+
+}
+
+section{
+    text-align: center;
+    padding-top: 10%;
+}
+
+section h2:first-child{
+    position: relative;
+    text-align: center;
+}
+section h2{
+padding-top: 20px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: whitesmoke;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+    font-size: 40px;
+    text-shadow:
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000; 
+
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+    margin-left: 40%;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+    
+	width: 320px;
+	height: 180px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 2.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+    width: 320px;
+	height: 180px;
+	    position: absolute; 
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    
+    transform: rotateY(180deg);
+    
+    
+ 
+}
+
+/* end effect flip*/
+
+
+
+
+/** FOOTER **/
+
+footer div.container-footer{
+    background-color: #353535;
+    
+}
+footer div.aboutme{
+    
+    color:whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding-top: 20px;
+    float: left;
+    padding-left:100px;
+    
+    
+}
+footer div.aboutme p{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: none;
+    padding-left: -20%;
+}
+
+info
+{
+    color: aliceblue;
+    padding-right: 20%;
+    text-transform: lowercase;
+    float: left;
+}
+
+
+footer div.aboutme span{
+    color: #f24918;
+}
+footer div.social-networking
+{
+    color: #f24918;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-right: 120px;
+    float: right;
+}
+footer div.social-networking span
+{
+    color:whitesmoke;
+}
+
+
+div.copyright{
+    clear: both;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: wheat;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 2px;
+    
+    padding-bottom: 2px;
+}
+
+.container-me{
+padding-left: 3%;
+padding-top: 43px;
+float: left;
+
+}
+
+
+.imgme{
+
+margin-bottom: 3%;
+height: 100px;
+width: 100px;
+/* los siguientes valores son independientes del tamaño del círculo */
+background-repeat: no-repeat;
+background-position: 50%;
+border-radius: 50%;
+background-size: 100% auto;
+
+}
+
+.name , .title{
+
+   
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
